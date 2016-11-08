@@ -15,7 +15,7 @@ get_header(); ?>
 <!-- затемняющий элемент -->
 <style type="text/css">
 #mask {
-    background-color:rgba(0,0,0,.5);
+    background-color:rgba(0,0,0,.4);
     height:100%;
     position:fixed;
     width:100%;
