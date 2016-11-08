@@ -1557,3 +1557,24 @@ height: 160px;
 .form{
     z-index: 3;
 }
+
+/*подцветка шага*/
+.block2 .right2 .text4b:nth-child(1),
+.block2 .right2 .text4b:nth-child(1) .text4c,
+.block3 .right3 .text4b:nth-child(2),
+.block3 .right3 .text4b:nth-child(2) .text4c,
+.block4 .right4 .text4b:nth-child(3),
+.block4 .right4 .text4b:nth-child(3) .text4c{
+color:#edc524;
+}
+
+/*смена кнопки при наведении на желтый*/
+.play1:hover{
+    background-image:url(images/p_y.png);
+}
+
+/*желтая пауза*/
+.play1:focus,
+.pause-y{
+    background-image:url(images/pp_y.png);
+}

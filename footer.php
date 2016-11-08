@@ -59,7 +59,19 @@
     </script>
     	<script>
     	(function($){
+    // ждем полную загрузку документы
 	$(document).ready(function(){
+		// смена картинки на паузу
+		// клик на плей
+		$('.play1').click(function(e){
+			// стандартное событие убираем
+			e.preventDefault();
+		// у всех кнопок убираем знак паузы
+		$('.play1').removeClass('pause-y');
+		// ставим знак паузы
+		$(this).addClass('pause-y');
+
+		})
 
 		$('.audio input[type=radio]').prop("disabled", true);
 		var audio = new Audio();
@@ -94,23 +106,39 @@
 				    $('.wh').text(type);
 				    $('.who').text(voice);
       			  	})
+      			  	// нажатие на плей
 			   	    $('.pa_top').click(function(e){
 			   	    	e.preventDefault();
 
+			   	    	// запуск 3 дорожки
 			   	    	audio3.play();
+
+			   	    	// скрыть текущий элемент
 			   	    	$(this).hide();
+			   	    	// отобразить пузу
 			   	    	$('.p_top').show();
+			   	    	// нажание на паузу
 			   	    	$('.p_top').click(function(e){
+			   	    		// отмена обычного поведения ссылки
 			   	    	e.preventDefault();
+			   	    	// паузу 3 дорожки
 			   	    	audio3.pause();
+			   	    	// скрыть текущий элемент
 			   	    	$(this).hide();
+			   	    	// скрыть
 			   	    	$('.pa_top').hide();
+			   	    	// отобразить "второй" плей
 			   	    	$('.pa_top2').show();
 			   	    })
+			   	    	// нажатие на "второй" плей
 			   	    	$('.pa_top2').click(function(e){
+			   	    		// стандартное событие убираем
 			   	    	e.preventDefault();
+			   	    	// запусе дорожки
 			   	    	audio3.play();
+			   	    	// скрываем текущий элемент
 			   	    	$(this).hide();
+			   	    	// отображаем знак паузы
 			   	    	$('.p_top').show();
 			   	    })
 
@@ -143,16 +171,25 @@
 				    $('.i2').val(($('.audio a').data('counter')));
 				    var re = audio2.length;
 				    console.log(re);
+				    // нажатие на кнопку ПАУЗА
 				    $('.p_now').click(function(e){
+				    	// отменяем обычное поведение ссылки
 				    	e.preventDefault();
+				    	// ставим на паузу
 				    	audio2.pause();
+				    // скрыть все кнопки плей\пауза
 				    $('.p_now').hide();
+				    // отобразить ПЛЕЙ
 				    $('.pa_now').show();
 				    })
+				    // нажатие на кнопку ПЛЕЙ
 				    $('.pa_now').click(function(e){
 				    	e.preventDefault();
+				    	// воспроизводим
 				    	audio2.play();
+				   	// скрываем кнопку плей
 				  	$('.pa_now').hide();
+				  	// отображаем паузу
 				    $('.p_now').show();
 				    })
       			  	})
