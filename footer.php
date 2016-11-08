@@ -10,7 +10,7 @@
  */
 ?>
 
-		
+
  <script>
  (function($){
     	$('.divs a').click(function(e){
@@ -78,10 +78,10 @@
   		$('.p_now').hide();
 		$('.pa_top2').hide();
   			audio.src = "";
-			audio2.src = ""; 
+			audio2.src = "";
 			   	    $('.voice input[type=radio]').data('counter', 0).change(function() {
 					var name = $(this).attr('name');
-					var val = $(this).val();			   	    
+					var val = $(this).val();
 					var type = $(this).attr('data-name');
 					var voice = $(this).attr('data-par');
 					audio.pause();
@@ -90,7 +90,7 @@
   					$('.audio input[type=radio]').prop("disabled", false);
   					var counter = $('.voice input[type=radio]').data('counter');    // Получаем значение
 				    $('.voice input[type=radio]').data('counter', counter + 1);        // Увеличиваем значение на 1
-				    $('.i').val(($('.voice input[type=radio]').data('counter'))); 
+				    $('.i').val(($('.voice input[type=radio]').data('counter')));
 				    $('.wh').text(type);
 				    $('.who').text(voice);
       			  	})
@@ -115,7 +115,7 @@
 			   	    })
 
 			   	    })
-			   	    
+
 
 
 				    $('.audio a').data('counter', 0).click(function(e) {
@@ -125,7 +125,7 @@
 				    audio2.src = "";
 					var name = $(this).attr('name');
 					var name1 = $(this).attr('data-name');
-					var val = $(this).attr('data-val');			   	    
+					var val = $(this).attr('data-val');
 					audio2.pause();
 				    audio2.onloadedmetadata = function() {
 				    	var dur = this.duration;
@@ -140,7 +140,7 @@
   					$('.play_w').text(name1);
   					var counter = $('.audio a').data('counter');    // Получаем значение
 				    $('.audio a').data('counter', counter + 1);        // Увеличиваем значение на 1
-				    $('.i2').val(($('.audio a').data('counter'))); 
+				    $('.i2').val(($('.audio a').data('counter')));
 				    var re = audio2.length;
 				    console.log(re);
 				    $('.p_now').click(function(e){
@@ -211,7 +211,7 @@ function countWords(textarea) {
 			$('.overlay .second').hide();
 			$('.order').hide();
 			}
-			
+
 
 
 	} else {
@@ -228,7 +228,7 @@ $('.textar').keyup(function(){
 	var tar = $("#word_amount").val();
 	var textov = $(".textar").val();
 	var pricec = $('.option48.price').text();
-$("#ost").text(250-tar); 
+$("#ost").text(250-tar);
 $('.info .info3 .info5').text(textov);
 $('.info .info6 .info8').text(pricec);
 })
@@ -255,37 +255,38 @@ $('.order').click(function(e){
 })
 $('.fin_order input[type=checkbox]').change(function(){
 	if(document.getElementById('ag').checked){
-		$('.fin_order input[type=submit]').prop("disabled", false);	
+		$('.fin_order input[type=submit]').prop("disabled", false);
 	}else{
-		$('.fin_order input[type=submit]').prop("disabled", true);	
+		$('.fin_order input[type=submit]').prop("disabled", true);
 	}
 
 })
 $('.form .close').click(function(e){
 	e.preventDefault();
 	$('.form').hide();
+	$('#mask').hide();
 })
 $('.btn-zak').click(function(e){
 	e.preventDefault();
-	$('.form1').show();
+	$('.form1,#mask').show();
 })
 $('.info11 div a').click(function(e){
 	e.preventDefault();
 	$('.info11 div a').removeClass('active-pay');
 	$(this).addClass('active-pay');
-	
+
 })
 $('.block4 .btn4 .text').click(function(e){
 	e.preventDefault();
 var pay_met = $('.active-pay').attr('data-pay');
 	var info = $('.info .info8').text();
-	$('.form2').show();
+	$('.form2,#mask').show();
 	$('.pay_met').text(pay_met);
 	$('.pay_price span').text(info);
 })
 $('.block1 .btn').click(function(e){
 	e.preventDefault();
-	$('.form3').show();
+	$('.form3,#mask').show();
 })
 })(jQuery);
 </script>

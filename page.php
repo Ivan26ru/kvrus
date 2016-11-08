@@ -12,6 +12,22 @@
  */
 
 get_header(); ?>
+<!-- затемняющий элемент -->
+<style type="text/css">
+#mask {
+    background-color:rgba(0,0,0,.5);
+    height:100%;
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index: 2;
+    display: none;
+}
+</style>
+
+<div id="mask"></div>
+<!-- модульные окна -->
 	<form action="" class="form1 form">
     <a href="#" class="close close_1"></a>
     	<h3>Индивидуальный заказ</h3>
@@ -57,26 +73,26 @@ get_header(); ?>
 	<p><span>890</span>&nbsp;₽</p><input type="submit" value="Оплатить">
 </div>
     </form>
-	<div class="row1 rows">	
+	<div class="row1 rows">
 <div class="block1">
 	<div class="header"></div>
-		<div class="logoall">	
+		<div class="logoall">
 			<div class="logo"><span>Audio Lego</span></div>
 			<div class="logotext">Конструктор аудироликов</div>
 		</div>
- 
+
 		<div class="menu">
 			<div data-rel="#row2">Диктор / музыка</div>
 			<div data-rel="#row3">Текст</div>
 			<div data-rel="#row4">Оплата</div>
-			
+
 		</div>
-		
+
 		<div class="zakazz">
 		<div class="zakaz btn-zak">Индивидуальный заказ</div>
 			<div class="tel"><span>8 800 123 45 67</span></div>
 		</div>
-	
+
 		<div class="left">
 		<div class="text1">Собери свой <span class="texta"> аудиоролик</span><span class="textb"> в 3 шага за 890</span><span class="textc"> ₽</span>  </div>
 		<div class="text2">Получи рельузьтат в течение 24 часов или мы вернем деньги </div>
@@ -93,7 +109,7 @@ get_header(); ?>
 			'order' => 'ASC'
 		) );
 		foreach($posts as $post){ setup_postdata($post);?>
-		  <? 
+		  <?
 		  $links = get_field('changeaudio');
 
 		  	$names = get_field('name1');
@@ -102,33 +118,33 @@ get_header(); ?>
 		 		<?}
 		wp_reset_postdata();
 				?>
-		
+
 		</div>
 		<span class="time">
-			
+
 		</span>
 		<p class="dur1">0:0</p>
 		<p class="dur"></p>
 		</div>
 		<div> </div>
 		</div>
-		
+
 		<div class="right">
 		<div class="text4">01<span class="text4a">Диктор / музыка</span ></div>
 		<div class="text4">02<span class="text4a">Текст</span ></div>
 		<div class="text4">03<span class="text4a">Оплата</span ></div>
 		<div class="youtube"><a href="http://youtube.com" target="_blank">Видео-инструкция</a></div>
 
-	</div>	
-	
-</div> 
+	</div>
+
 </div>
 </div>
-<div class="row2 rows" id="row2">	
+</div>
+<div class="row2 rows" id="row2">
 <div class="block2">
 	<div class="header"></div>
-		
-	
+
+
 		<div class="left2">
 		<div class="text5">1. Выберите голос диктора и фоновую музыку</div>
 		<div class="option">
@@ -141,7 +157,7 @@ get_header(); ?>
 		<div class="option6 options_tab"><a href="tab_3">Сексуальный</a></div>
 		<div class="option7 options_tab"><a href="tab_4">Официально-деловой</a></div>
 		</div>
-		<div class="playall pl"> 
+		<div class="playall pl">
 		<div class="tab_1 acitve">
 			<div class="playtext">01<a href="#" class="play1" type="radio" name="voice_style" value="1" data-name="Стиль 1" data-par="Мужской голос 1"></a></div>
 		<div class="playtext">02<a href="#" class="play1"></a></div>
@@ -170,10 +186,10 @@ get_header(); ?>
 		<div class="playtext">19<a href="#" class="play1"></a></div>
 		<div class="playtext">20<a href="#" class="play1"></a></div>
 		</div>
-		
-		
+
+
 		</div>
-		<div class="option8"> 
+		<div class="option8">
 		<div class="option9"></div>
 		<div class="option10">Сейчас прослушивается</div>
 		<div class="option11">Диктор:</div>
@@ -181,17 +197,17 @@ get_header(); ?>
 		<div class="option13">Радостный 01</div>
 
 		</div>
-		
+
 		</div>
-		
+
 		<div class="option24">
 		<div class="option14">Музыка</div>
 		<div class="option15"></div>
 		<div class="option16"></div>
 		<div class="option17">Попробуйте прослушать одновременно с голосом:</div>
-		
-		
-		<div class="playall audio"> 
+
+
+		<div class="playall audio">
 		<?
 		$posts = get_posts( array(
 			'post_type'       => 'melody',
@@ -201,7 +217,7 @@ get_header(); ?>
 		$i = '0';
 		foreach($posts as $post){ setup_postdata($post);?>
 		  <?
-		  $i = $i+1; 
+		  $i = $i+1;
 		  $link = get_field('melody1');
 
 		  	$name = get_field('name1');
@@ -212,24 +228,24 @@ get_header(); ?>
 				?>
 
 
-		
+
 		</div>
-		<div class="option18"> 
+		<div class="option18">
 
 		<div class="option19"><a href="#" class="p_now">II</a><a href="#" class="pa_now">></a>
 	<span class="time">
-			
+
 		</span>
 		<p class="dur3">0:0</p>
 		<p class="dur2">0:0</p>
 		</div>
 		<div class="option20">Сейчас прослушивается</div>
 		<div class="option21">Музыка: <span class="play_w"></span></div>
-		
+
 
 		</div>
-		
-		<div class="option22"> 
+
+		<div class="option22">
 		<div class="option28">Выбрано</div>
 		<div class="option30">Диктор:</div>
 		<div class="option25"></div>
@@ -239,10 +255,10 @@ get_header(); ?>
 		<div class="btn2"><div class='text textotext' data-hr="#row3">ВЫБРАТЬ И ПЕРЕЙТИ К ТЕКСТУ</div></div>
 
 		</div>
-		
+
 		</div>
 		</div>
-		
+
 		<div class="right2">
 		<div class="text4b">01<span class="text4c">Диктор / музыка</span ></div>
 		<div class="text4b">02<span class="text4c">Текст</span ></div>
@@ -251,14 +267,14 @@ get_header(); ?>
 		<div class="zakaz2">Ничего не подошло?</div>
 		<div class="zakaz3 btn-zak">Индивидуальный заказ</div>
 		</div>
-		
-	</div>	
-	
-</div> 
+
+	</div>
+
+</div>
 </div>
 </div>
 
-<div class="row3 rows" id="row3">	
+<div class="row3 rows" id="row3">
 <div class="block3">
 	<div class="header"></div>
 		<div class="left2">
@@ -286,7 +302,7 @@ get_header(); ?>
  <div class="option43">Комментарий</div>
  <div class="option44" style="height: 325px;"><textarea></textarea></div>
 </div>
-				<div class="option22"> 
+				<div class="option22">
 		<div class="option47 ">Стоимость </div>
 		<div class="option48 price" > <p style="    float: left;
     margin: 0;">0 </p>&nbsp;₽</div>
@@ -295,9 +311,9 @@ get_header(); ?>
 		<div class="btn3"><div class='text textotext'  data-hr="#row4">ВЫБРАТЬ И ПЕРЕЙТИ К ОПЛАТЕ</div></div>
 
 		</div>
-	</div>	
-	
-	
+	</div>
+
+
 	<div class="right3">
 		<div class="text4b">01<span class="text4c">Диктор / музыка</span ></div>
 		<div class="text4b">02<span class="text4c">Текст</span ></div>
@@ -307,12 +323,12 @@ get_header(); ?>
 		<div class="zakaz6 btn-zak">Индивидуальный заказ</div>
 		</div>
 </div>
-</div>		
+</div>
 </div>
 
-<div class="row4 rows" id="row4">	
+<div class="row4 rows" id="row4">
 <div class="block4">
-	<div class="header"></div>	
+	<div class="header"></div>
 	<div class="left2">
 		<div class="option31">3. Оплата</div>
 
@@ -326,7 +342,7 @@ get_header(); ?>
 		<div class="option34">Музыка:01</div>
 		<div class="option36"></div>
 		</div>
-		
+
 		<div class="info3">
 		<div class="info4">Текст</div>
 		<div class="info5"></div>
@@ -335,25 +351,25 @@ get_header(); ?>
 
 
 
-		<div class="info6">	
+		<div class="info6">
 		<div class="info7">Стоимость</div>
 		<div class="info8">  <span>₽</span></div>
 		<div class="info9">Длительность</div>
 		<div class="info10">  28 секунд</div>
 		</div>
-		
-		
+
+
 		</div>
 		</div>
-		<div class="info11">	
+		<div class="info11">
 		<div class="info12"><a href="#" data-pay="VISA"></a></div>
 		<div class="info13"><a href="#" data-pay="MasterCard"></a></div>
 		<div class="info14"><a href="#" data-pay="Яндекс Деньги"></a></div>
 		<div class="info15"><a href="#" data-pay="WebMoney"></a></div>
 		</div>
 		<div class="btn4"><div class='text'>ЗАКАЗАТЬ АУДИОРОЛИК</div></div>
-	</div>	
-		
+	</div>
+
 		<div class="right4">
 		<div class="text4b">01<span class="text4c">Диктор / музыка</span ></div>
 		<div class="text4b">02<span class="text4c">Текст</span ></div>
@@ -362,10 +378,10 @@ get_header(); ?>
 		<div class="zakaz8">Ничего не подошло?</div>
 		<div class="zakaz9 btn-zak">Индивидуальный заказ</div>
 		</div>
-		
-	</div>	
+
+	</div>
 	<div class="footer">
-		<div class="logoall">	
+		<div class="logoall">
 			<div class="logo"><span>Audio Lego</span></div>
 			<div class="logotext">Конструктор аудироликов</div>
 		</div>
@@ -379,7 +395,7 @@ get_header(); ?>
 			<a href="#" class="phone">8 800 123 45 67</a>
 		</div>
 	</div>
-</div> 
+</div>
 </div>
 </div>
 <?php get_footer(); ?>

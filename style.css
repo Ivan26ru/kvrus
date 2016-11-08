@@ -223,7 +223,7 @@ display: inline-block;
 }
 .play
 {
-    
+
 }
 .text4
 {
@@ -449,7 +449,7 @@ display: inline-block;
 .option4
 {
     display: inline-block;
-    
+
     padding-bottom: 10px;
     padding-right: 11px;
 }
@@ -477,9 +477,9 @@ display: inline-block;
 .option5
 {
 display: inline-block;
-    
+
         margin-left: -5px;
-   
+
     padding-bottom: 10px;
     padding-right: 37px;
     margin-left: -5px;
@@ -487,18 +487,18 @@ display: inline-block;
 .option6
 {
     display: inline-block;
-    
+
     margin-left: -5px;
-    
+
     padding-bottom: 10px;
     padding-right: 62px;
 }
 .option7
 {
 display: inline-block;
-    
+
     margin-left: -28px;
-    
+
     padding-bottom: 10px;
     padding-right: 0px;
 }
@@ -863,10 +863,10 @@ display: inline-block;
     resize: none;
 }
 .option46
-{   
-        padding-left: 20px; 
+{
+        padding-left: 20px;
     }
-    
+
 .option40
 {
     font-size: 13px;
@@ -926,7 +926,7 @@ display: inline-block;
     font-size: 21px;
     font-family: 'Roboto';
     padding-left: 29px;
-        
+
 }
 .option48
 {
@@ -996,7 +996,7 @@ display: inline-block;
     font-size: 16px;
     font-family: 'roboto';
     }
-    
+
 .info5
 {
     color: #FFF;
@@ -1010,7 +1010,7 @@ display: inline-block;
     font-size: 16px;
     font-family: 'roboto';
     margin-top: 29px;
-    
+
 }
 
 .info7
@@ -1047,14 +1047,14 @@ display: inline-block;
     background: url(/images/v.png);
     width: 172px;
     height: 77px;
-    display:inline-block;   
+    display:inline-block;
 }
 .info13
 {   display: inline-block;
     background: url(/images/m.png);
     width: 172px;
     height: 77px;
-    display:inline-block;   
+    display:inline-block;
     margin-left: 39px;
 }
 .info14
@@ -1062,7 +1062,7 @@ display: inline-block;
     background: url(/images/ya.png);
     width: 172px;
     height: 77px;
-    display:inline-block;   
+    display:inline-block;
     margin-left: 39px;
 }
 .info15
@@ -1071,7 +1071,7 @@ display: inline-block;
     width: 172px;
     height: 77px;
     display:inline-block;
-    margin-left: 39px;  
+    margin-left: 39px;
 }
 .btn4 {
    background-image: url(/images/btn4.png);
@@ -1206,7 +1206,7 @@ background: url(/images/p_p.png);
 }
 .form{
      margin-top: 98px;
-         position: fixed;   
+         position: fixed;
              text-align: center;
 }
 .form1 {
@@ -1220,7 +1220,7 @@ left: 50%;
 .form h3{
      font-size: 36px;
     color: #393939;
-    font-family: 'Conv_Oswald-Medium';   
+    font-family: 'Conv_Oswald-Medium';
 }
 .form1 h3{
 
@@ -1318,7 +1318,7 @@ display: inline-block;
     text-align: right;
 }
 .form2 p span{
- font-weight: 400;    
+ font-weight: 400;
 }
 .form2 div label{
 color: #8a8a8a;
@@ -1350,7 +1350,7 @@ height: 18px;
     border-radius: 15px;
 }
 .form3 {
-    
+
     width: 500px;
     left: 50%;
     margin-left: -290px;
@@ -1480,7 +1480,7 @@ height: 160px;
 }
 .block1 .left .play .buts {
     display: inline-block;
-    
+
 }
 .block1 .left .play .dur{
     position: absolute;
@@ -1550,4 +1550,10 @@ height: 160px;
         position: absolute;
     top: 0;
     right: 360px;
+}
+
+/*style Ivan*/
+/*модульные окна*/
+.form{
+    z-index: 3;
 }
