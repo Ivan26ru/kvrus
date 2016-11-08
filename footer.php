@@ -70,8 +70,32 @@
 		$('.play1').removeClass('pause-y');
 		// ставим знак паузы
 		$(this).addClass('pause-y');
+		// конец клика на плей
+		});
 
-		})
+		// желтый пол (ж)
+		$('.option2').click(function(e){
+			// стандартное событие убираем
+			e.preventDefault();
+		// у всех кнопок убираем знак паузы
+		$('.option2').removeClass('j-y');
+		$('.option3').removeClass('m-y');
+		// ставим знак паузы
+		$(this).addClass('j-y');
+		// конец клика на плей
+		});
+
+		// желтый пол (м)
+		$('.option3').click(function(e){
+			// стандартное событие убираем
+			e.preventDefault();
+		// у всех кнопок убираем знак паузы
+		$('.option2').removeClass('j-y');
+		$('.option3').removeClass('m-y');
+		// ставим знак паузы
+		$(this).addClass('m-y');
+		// конец клика на плей
+		});
 
 		$('.audio input[type=radio]').prop("disabled", true);
 		var audio = new Audio();

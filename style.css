@@ -1578,3 +1578,18 @@ color:#edc524;
 .pause-y{
     background-image:url(images/pp_y.png);
 }
+
+/*желтый пол*/
+/*ж*/
+.rep,
+.j-y,
+.option2:focus{
+    background-image:url(images/j_y.png);
+}
+
+/*м*/
+.rep2,
+.m-y,
+.option3:focus{
+    background-image:url(images/m_y-2.png);
+}
