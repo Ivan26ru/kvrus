@@ -1593,3 +1593,39 @@ color:#edc524;
 .option3:focus{
     background-image:url(images/m_y-2.png);
 }
+
+/*цвет кнопки маленькой плей*/
+.option29:hover{
+    background-image:url(images/sm_p_y.png);
+    cursor:pointer;
+}
+
+/* макетный шрифт */
+.footer a{
+    text-decoration:none;
+    font-size: 14px;
+    font-family: 'ROBOTO';
+    line-height: 27px;
+    letter-spacing: 0.2px;
+    color: #FFF;
+}
+
+
+/*кнопки при нажатии*/
+.btn:hover{
+    background-image:url(images/btny_light.png);
+    cursor:pointer;
+}
+
+
+.btn2:hover,
+.btn3:hover{
+    background-image:url(images/btn1-light.png);
+    cursor:pointer;
+}
+
+
+.btn4:hover{
+    background-image:url(images/btn4-light.png);
+    cursor:pointer;
+}
